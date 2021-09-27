@@ -135,7 +135,7 @@
                         console.log(newDate)
                     }
                     if (this.selectedDate) {
-                        today = new Date(Date.parse(this.selectedDate));
+                        today = new Date(this.selectedDate.replace(/-/g, "/"));
                     } else {
                         today = new Date();
                     }
